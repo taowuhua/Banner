@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
         bt = findViewById(R.id.bt);
         /***
          *
-         * 接口回调
+         * 接口回调（局部内部类的做法）
          */
+        //创建对象
         SecondActivity.Ask ask = new SecondActivity.Ask();
         ask.setHelperInterface(new HelperInterface() {
             @Override

@@ -1,0 +1,108 @@
+{
+    "project_type": "gradle",
+    "android_gradle_plugin_version": "3.0.0",
+    "freeline_gradle_plugin_version": "0.8.8",
+    "java_home": "D:\\jdk1.864",
+    "freeline_cache_dir": "D:\\tuisong\\RxBusTest",
+    "auto_dependency": true,
+    "product_flavor": "",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "root_dir": "D:\\tuisong\\RxBusTest",
+    "main_project_name": "app",
+    "main_project_dir": "app",
+    "build_directory": "D:\\tuisong\\RxBusTest\\app\\build",
+    "build_cache_dir": "D:\\tuisong\\RxBusTest\\app\\build\\freeline",
+    "build_tools_version": "26.0.2",
+    "sdk_directory": "D:\\android-sdk\\StudioSDK",
+    "build_tools_directory": "D:\\android-sdk\\StudioSDK\\build-tools\\26.0.2",
+    "compile_sdk_version": "android-26",
+    "compile_sdk_directory": "D:\\android-sdk\\StudioSDK\\platforms\\android-26",
+    "package": "com.ryx.rxbustest",
+    "debug_package": "com.ryx.rxbustest",
+    "main_manifest_path": "D:\\tuisong\\RxBusTest\\app\\src\\main\\AndroidManifest.xml",
+    "launcher": "com.ryx.rxbustest.MainActivity",
+    "apk_path": "D:\\tuisong\\RxBusTest\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+    "extra_dep_res_paths": [
+        
+    ],
+    "exclude_dep_res_paths": [
+        
+    ],
+    "main_r_path": "D:\\tuisong\\RxBusTest\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "use_jdk8": true,
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "use_system_gradle": false,
+    "check_sources_md5": [
+        
+    ],
+    "main_src_directory": [
+        "D:\\tuisong\\RxBusTest\\app\\src\\debug\\java",
+        "D:\\tuisong\\RxBusTest\\app\\src\\main\\java"
+    ],
+    "main_res_directory": [
+        "D:\\tuisong\\RxBusTest\\app\\src\\debug\\res",
+        "D:\\tuisong\\RxBusTest\\app\\src\\main\\res"
+    ],
+    "main_assets_directory": [
+        "D:\\tuisong\\RxBusTest\\app\\src\\debug\\assets",
+        "D:\\tuisong\\RxBusTest\\app\\src\\main\\assets"
+    ],
+    "main_jni_directory": [
+        "D:\\tuisong\\RxBusTest\\app\\src\\debug\\jni",
+        "D:\\tuisong\\RxBusTest\\app\\src\\main\\jni"
+    ],
+    "main_jniLibs_directory": [
+        "D:\\tuisong\\RxBusTest\\app\\src\\debug\\jniLibs",
+        "D:\\tuisong\\RxBusTest\\app\\src\\main\\jniLibs"
+    ],
+    "project_source_sets": {
+        "app": {
+            "main_src_directory": [
+                "D:\\tuisong\\RxBusTest\\app\\src\\debug\\java",
+                "D:\\tuisong\\RxBusTest\\app\\src\\main\\java"
+            ],
+            "main_res_directory": [
+                "D:\\tuisong\\RxBusTest\\app\\src\\debug\\res",
+                "D:\\tuisong\\RxBusTest\\app\\src\\main\\res"
+            ],
+            "main_assets_directory": [
+                "D:\\tuisong\\RxBusTest\\app\\src\\debug\\assets",
+                "D:\\tuisong\\RxBusTest\\app\\src\\main\\assets"
+            ],
+            "main_jni_directory": [
+                "D:\\tuisong\\RxBusTest\\app\\src\\debug\\jni",
+                "D:\\tuisong\\RxBusTest\\app\\src\\main\\jni"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\tuisong\\RxBusTest\\app\\src\\debug\\jniLibs",
+                "D:\\tuisong\\RxBusTest\\app\\src\\main\\jniLibs"
+            ],
+            "main_manifest_path": "D:\\tuisong\\RxBusTest\\app\\src\\main\\AndroidManifest.xml"
+        }
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "D:\\tuisong\\RxBusTest\\app"
+        }
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "databinding": [
+        
+    ],
+    "databinding_modules": [
+        
+    ]
+}

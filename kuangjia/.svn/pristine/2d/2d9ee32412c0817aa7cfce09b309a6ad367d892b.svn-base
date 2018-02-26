@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/black_iv_left"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_x" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|bottom">
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onepx"
+            android:background="@color/payhorizontalline" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.bank.quickpay.widget.FingerPaintView
+        android:id="@+id/black_fingerpaint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="66px"
+        >
+    </com.bank.quickpay.widget.FingerPaintView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

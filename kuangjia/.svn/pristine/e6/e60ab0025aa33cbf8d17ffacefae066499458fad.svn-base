@@ -1,0 +1,61 @@
+{
+    "desc": "icon功能列表",
+    "getIconList": [
+        {
+            "flag": "collect",
+            "id": "CollectionActivity",
+            "idx": "1",
+            "name": "我要收款",
+            "res": "img_payment",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "earning_circle",
+            "id": "EarningCircleActivity",
+            "idx": "2",
+            "name": "收益圈",
+            "res": "img_earning_circle",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "trade_record",
+            "id": "TradeRecordActivity",
+            "idx": "3",
+            "name": "交易明细",
+            "res": "img_trade_record",
+            "show":"0",
+            "permission":"0"
+        },
+        {
+            "flag": "myinfomsg",
+            "id": "MyInfoActivity",
+            "idx": "4",
+            "name": "我的信息",
+            "res": "img_my_info",
+            "show": "0",
+            "permission":"0"
+        },
+        {
+            "flag": "query_details",
+            "id": "MyInviteCodeActivity",
+            "idx": "5",
+            "name": "我的邀请码",
+            "res": "img_invitcode",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "HelpExplain",
+            "id": "HtmlMessageActivity",
+            "idx": "6",
+            "name": "帮助说明",
+            "res": "img_help",
+            "show": "0",
+            "permission":""
+        }
+    ],
+    "result": "0",
+    "serviceid": "getIconlist"
+}

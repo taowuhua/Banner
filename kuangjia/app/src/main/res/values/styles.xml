@@ -1,0 +1,153 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+        <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowBackground">@android:color/white</item>
+            <item name="android:colorBackgroundCacheHint">@android:color/white</item>
+            <item name="android:windowNoTitle">true</item>
+            <!-- 设置activity切换动画 -->
+            <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        </style>
+    <style name="AppTheme.loginNoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+        <style name="CustomProgressDialog" parent="@style/CustomDialog">
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:backgroundDimEnabled">false</item>
+            <item name="android:windowNoTitle">true</item>
+        </style>
+
+        <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+            <item name="android:windowFrame">@null</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+            <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        </style>
+        <array name="button_flat_color">
+            <item>@style/LightFlatColorButtonRippleStyle</item>
+            <item>@style/DarkFlatColorButtonRippleStyle</item>
+        </array>
+        <style name="LightFlatColorButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+            <item name="android:background">@null</item>
+            <item name="rd_backgroundColor">#3303A9F4</item>
+            <item name="rd_rippleColor">#3303A9F4</item>
+            <item name="rd_cornerRadius">0dp</item>
+            <item name="rd_delayClick">afterRelease</item>
+            <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+            <item name="android:textColor">@color/colorPrimary</item>
+        </style>
+        <style name="DarkFlatColorButtonRippleStyle" parent="Material.Drawable.Ripple.Touch">
+            <item name="android:background">@null</item>
+            <item name="rd_backgroundColor">#3300E5FF</item>
+            <item name="rd_rippleColor">#3300E5FF</item>
+            <item name="rd_cornerRadius">4dp</item>
+            <item name="rd_delayClick">afterRelease</item>
+            <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+            <item name="android:textColor">@color/colorAccent</item>
+        </style>
+        <!--add by laomao for material desginer sytle-->
+        <style name="LightFlatWaveColorButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+            <item name="android:background">@null</item>
+            <item name="rd_rippleColor">#33000000</item>
+            <item name="rd_cornerRadius">4dp</item>
+            <item name="rd_delayClick">afterRelease</item>
+            <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+            <item name="android:textColor">@color/colorPrimary</item>
+        </style>
+        <style name="LightRaiseWaveColorButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+            <item name="android:background">@color/colorPrimary</item>
+            <item name="rd_rippleColor">#33000000</item>
+            <item name="rd_leftPadding">1dp</item>
+            <item name="rd_topPadding">1dp</item>
+            <item name="android:minHeight">56dp</item>
+            <item name="rd_rightPadding">1dp</item>
+            <item name="rd_bottomPadding">2dp</item>
+            <item name="rd_delayClick">afterRelease</item>
+            <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+            <item name="android:textColor">@color/abc_primary_text_material_dark</item>
+        </style>
+
+
+
+        <style name="LightCheckBox" parent="Material.Drawable.CheckBox">
+            <item name="cbd_width">19dp</item>
+            <item name="cbd_height">19dp</item>
+            <item name="cbd_boxSize">17dp</item>
+            <item name="cbd_cornerRadius">0dp</item>
+            <item name="cbd_strokeSize">1dp</item>
+            <item name="cbd_animDuration">@android:integer/config_mediumAnimTime</item>
+        </style>
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="LightRaiseColorButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+        <item name="android:background">@drawable/roundshape</item>
+        <item name="rd_rippleColor">#33000000</item>
+        <item name="rd_leftPadding">1dp</item>
+        <item name="rd_topPadding">1dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="rd_rightPadding">1dp</item>
+        <item name="rd_bottomPadding">2dp</item>
+        <item name="rd_delayClick">afterRelease</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/abc_primary_text_material_dark</item>
+        <item name="android:layout_height">130px</item>
+    </style>
+    <style name="LightSyqBrownColorButtonRippleStyle" parent="LightRaiseColorButtonRippleStyle">
+        <item name="android:background">@drawable/white_roundshape</item>
+        <item name="android:textColor">@color/light_brown</item>
+    </style>
+    <style name="SimpleDialogLight" parent="Material.App.Dialog.Simple.Light">
+        <item name="di_inAnimation">@anim/anim_scale_in</item>
+        <item name="di_outAnimation">@anim/anim_scale_out</item>
+    </style>
+    <style name="VerificationCodeDialog" parent="Material.App.Dialog.Simple.Light">
+        <item name="di_inAnimation">@anim/anim_scale_in</item>
+        <item name="di_outAnimation">@anim/anim_scale_out</item>
+    </style>
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/contenttitletext</item>
+
+    </style>
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation.Translucent">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+    <style name="SimpleDialog" parent="Material.App.Dialog.Simple">
+        <item name="di_inAnimation">@anim/anim_scale_in</item>
+        <item name="di_outAnimation">@anim/anim_scale_out</item>
+    </style>
+    <style name="quickDialogMsgDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@anim/anim_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_scale_out</item>
+    </style>
+
+
+</resources>

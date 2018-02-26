@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/commontitle" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:paddingTop="30px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_repayplan_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="2017年10月 共11期"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <TextView
+            android:id="@+id/tv_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:text="手续费 78 元"
+            android:textSize="@dimen/bodylittletextsize"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay1"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:paddingTop="30px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_repay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/threeblack"
+            android:text="还款金额"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <TextView
+            android:id="@+id/tv_begin_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:text="开始时间"
+            android:textSize="@dimen/bodylittletextsize"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay2"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:paddingTop="20px"
+        android:paddingBottom="40px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_recharge_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/threeblack"
+            android:text="充值金额"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:text="结束时间"
+            android:textSize="@dimen/bodylittletextsize"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/color_efeff4"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_repayplan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

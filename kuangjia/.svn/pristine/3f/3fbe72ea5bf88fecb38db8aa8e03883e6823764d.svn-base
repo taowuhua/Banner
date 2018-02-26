@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/quickpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <ListView
+        android:id="@+id/lv_detaile"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/BLACK"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_below="@+id/lv_detaile"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/detail_marginLeft"
+            android:text="@string/funding_state"
+            android:textSize="@dimen/bodytextsize" />
+
+        <TextView
+            android:id="@+id/tv_tradeState"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/detail_marginRight"
+            android:textSize="@dimen/bodytextsize" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

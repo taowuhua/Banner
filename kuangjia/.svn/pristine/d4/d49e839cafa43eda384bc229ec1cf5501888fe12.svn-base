@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backg"
+    android:orientation="vertical">
+    <include layout="@layout/quickpaytitle"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <rm.com.clocks.ClockImageView
+            android:id="@+id/clocks"
+            android:layout_width="204px"
+            android:layout_height="204px"
+            android:layout_marginTop="90px"
+            android:background="@drawable/orange_circle"
+            android:layout_centerHorizontal="true"
+            app:clockColor="#ffffff"
+            app:frameWidth="regular"
+            app:hours="16"
+            app:indeterminateSpeed="1"
+            app:minutes="20"
+            app:pointerWidth="thin"
+            app:timeSetDuration="400"
+            />
+        <ImageView
+            android:id="@+id/img_status"
+            android:layout_width="204px"
+            android:layout_height="204px"
+            android:layout_marginTop="90px"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90px"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mediumtitletext"
+            />
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_status"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="96px"
+            android:layout_marginBottom="108px"
+            android:textColor="@color/secondblack"
+            android:textSize="18sp"
+            />
+</com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:weightSum="2"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px">
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@drawable/icon_user_bg_msg_number" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_left"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="57px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_msg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/bodytextsize"/>
+
+            <TextView
+                android:id="@+id/tv_msg_content"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="13sp"
+                android:maxEms="20"
+                android:textColor="@color/graytime"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:layout_width="25px"
+            android:layout_height="48px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="40px"
+            android:src="@drawable/righttocontent" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_marginTop="40px"
+        android:layout_below="@+id/lay1"
+        android:background="@color/payhorizontalline" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

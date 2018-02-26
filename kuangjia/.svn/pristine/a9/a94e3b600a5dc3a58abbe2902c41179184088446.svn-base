@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/quickpaytitlelyout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_black"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/tileleftImg"
+            android:layout_width="110px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:src="@drawable/quickpaytitlebackbg"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/tilerightImg"
+            android:layout_width="106px"
+            android:layout_height="106px"
+            android:layout_marginRight="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:src="@drawable/quickpaytitlehelp"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/c_ll_common_use"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_black"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60px"
+                android:text="今日收益(元)"
+                android:textColor="@color/light_brown"
+                android:textSize="@dimen/common_textsize" />
+
+            <com.bank.quickpay.widget.CMoneyTextView
+                android:id="@+id/tv_tdIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80px"
+                android:text="0.00"
+                android:textColor="@color/light_brown"
+                android:textSize="@dimen/home_textsize" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_black"
+            android:orientation="horizontal"
+            android:paddingBottom="40px"
+            android:paddingTop="45px">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/mv_tlIncome_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="累计收益(元)"
+                    android:textColor="@color/light_brown"
+                    android:textSize="@dimen/smallersize" />
+
+                <com.bank.quickpay.widget.CMoneyTextView
+                    android:id="@+id/tv_ljIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30px"
+                    android:singleLine="true"
+                    android:text="0.00"
+                    android:textColor="@color/light_brown"
+                    android:textSize="@dimen/maxtextsize" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/people_amount_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/bg_black"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="圈友数量"
+                    android:textColor="@color/light_brown"
+                    android:textSize="@dimen/smallersize" />
+
+                <TextView
+                    android:id="@+id/tv_people_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30px"
+                    android:text="0"
+                    android:textColor="@color/light_brown"
+                    android:textSize="@dimen/maxtextsize" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="30px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_bc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70px"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="70px"
+            android:text="可提取："
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/bodytextsize" />
+
+        <com.bank.quickpay.widget.CMoneyTextView
+            android:id="@+id/tv_withdrawalNo"
+            android:layout_toRightOf="@+id/tv_bc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70px"
+            android:layout_marginLeft="45px"
+            android:layout_marginTop="70px"
+            android:textSize="@dimen/bodytextsize" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_whithdrawl"
+            style="@style/LightSyqBrownColorButtonRippleStyle"
+            android:layout_width="240px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45px"
+            android:gravity="center"
+            android:text="提取"
+            android:textSize="@dimen/contenttitletext" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

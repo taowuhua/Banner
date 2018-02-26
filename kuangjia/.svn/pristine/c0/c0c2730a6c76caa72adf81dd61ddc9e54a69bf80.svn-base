@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+选中指示点形状
+solid 单种颜色填充 size大小 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+    <solid android:color="#d4a667"/>
+	<size android:width="8dp" android:height="8dp"/>
+</shape>

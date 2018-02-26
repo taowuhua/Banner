@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_load_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/Rlayout_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+      >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp">
+
+            <com.ryx.baselib.widget.RyxSpinKitView
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fitsSystemWindows="true"
+                android:padding="10dip"
+                app:SpinKit_Color="#FF8000" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frameLayout1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="2dip"
+            android:paddingTop="2dip"
+            android:text="努力加载中..."
+            android:textColor="#ff8500"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

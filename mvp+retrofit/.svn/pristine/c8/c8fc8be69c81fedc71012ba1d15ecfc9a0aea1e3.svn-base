@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:id="@+id/home_carditemlayoutid"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/white_roundshape">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40px"
+        android:gravity="center_vertical"
+        android:layout_height="100px">
+        <ImageView
+            android:id="@+id/home_card_item_cardiv"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="33px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bank_default"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:textSize="@dimen/bodytextsize"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/home_card_item_cardiv"
+            android:text="749243274***7897"/>
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/righttocontent"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="45px"
+        android:background="@color/fourblack"></View>
+
+<com.zhy.autolayout.AutoRelativeLayout
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="150px">
+    <TextView
+        android:id="@+id/billday_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/threeblack"
+        android:textSize="@dimen/bodylittletextsize"
+        android:layout_marginLeft="30px"
+        android:text="账单日:"/>
+    <TextView
+        android:id="@+id/billday_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/threeblack"
+        android:layout_marginLeft="23px"
+        android:textSize="@dimen/bodylittletextsize"
+        android:layout_toRightOf="@id/billday_label_tv"
+        android:text="每月01日"/>
+    <TextView
+        android:id="@+id/reimbursement_label_tv"
+        android:layout_toRightOf="@id/billday_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/threeblack"
+        android:textSize="@dimen/bodylittletextsize"
+        android:layout_marginLeft="50px"
+        android:text="还款日:"/>
+    <TextView
+        android:id="@+id/reimbursement_content_tv"
+        android:layout_toRightOf="@id/reimbursement_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/threeblack"
+        android:textSize="@dimen/bodylittletextsize"
+        android:layout_marginLeft="18px"
+        android:text="每月15日"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/bodytextsize"
+        android:layout_marginRight="30px"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:text="暂无计划"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

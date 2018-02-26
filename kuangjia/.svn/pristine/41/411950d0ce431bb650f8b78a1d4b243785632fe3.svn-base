@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="450px"
+            android:layout_height="450px"
+            android:src="@drawable/no_internet" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/no_internet" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/bodytextsize"
+            android:text="刷新"
+            style="@style/LightFlatColorButtonRippleStyle"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/commontitle" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="70px"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:paddingBottom="35px"
+        android:paddingTop="40px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/tv_cardno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银行卡号"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edt_cardNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/tv_cardno"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:enabled="false"
+                android:inputType="number"
+                android:maxLength="30"
+                android:textColor="@android:color/black"
+                android:textColorHint="#cccccc"
+                android:textSize="@dimen/bodytextsize" />
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_user_jiantou" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="40px"
+            android:layout_marginTop="35px"
+            android:background="@color/fourblack" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/tv_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收款行"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edt_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/tv_bank"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:enabled="false"
+                android:textColor="@android:color/black"
+                android:textColorHint="#cccccc"
+                android:textSize="@dimen/bodytextsize" />
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_user_jiantou" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="40px"
+            android:layout_marginTop="35px"
+            android:background="@color/fourblack" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/tv_bankcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开户城市"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edt_bankCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/tv_bankcity"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:enabled="false"
+                android:hint="选择城市"
+                android:textColor="@android:color/black"
+                android:textColorHint="#cccccc"
+                android:textSize="@dimen/bodytextsize" />
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_user_jiantou" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="40px"
+            android:layout_marginTop="35px"
+            android:background="@color/fourblack" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/tv_bankbranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开户支行"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edt_bankBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/tv_bankbranch"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:enabled="false"
+                android:hint="选择开户支行"
+                android:textColor="@android:color/black"
+                android:textColorHint="#cccccc"
+                android:textSize="@dimen/bodytextsize" />
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_user_jiantou" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay_contract"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70px">
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/cb_agree"
+            style="@style/LightCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80px" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="80px"
+            android:layout_toRightOf="@+id/cb_agree"
+            android:text="@string/agree" />
+
+        <TextView
+            android:id="@+id/tv_authcontract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80px"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="@string/authorize_contract"
+            android:textColor="@color/colorPrimary" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_contract"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="80px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/btn_login"
+                style="@style/LightRaiseColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="下一步"
+                android:textSize="@dimen/contenttitletext" />
+        </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView
+        android:id="@+id/tv_ignore"
+        android:layout_marginBottom="80px"
+        android:textSize="@dimen/bodylittletextsize"
+        android:textColor="@color/warning_icon_ff8500"
+        android:text="暂时跳过"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</com.zhy.autolayout.AutoRelativeLayout>

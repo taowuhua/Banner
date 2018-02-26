@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_ed"
+    android:orientation="vertical">
+    <include layout="@layout/commontitle"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="80px"
+        android:layout_marginLeft="45px"
+        android:layout_height="80px"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/bank_default"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="21px"
+            android:textSize="@dimen/bodytextsize"
+            android:text="4729****93842"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="30px"
+        android:layout_height="150px">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/bodytextsize"
+            android:textColor="@color/secondblack"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:text="账单日"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/contenttitletext"
+            android:hint="请选择账单日"
+            android:background="@null"
+            android:maxLength="9"
+            android:textColor="@color/secondblack"
+            android:layout_weight="3"
+            android:focusable="true"
+            android:textColorHint="@color/fourblack"
+            android:focusableInTouchMode="true"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/fourblack"></View>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_height="150px">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/bodytextsize"
+            android:textColor="@color/secondblack"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:text="还款日"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/contenttitletext"
+            android:hint="请选择还款日"
+            android:background="@null"
+            android:maxLength="9"
+            android:textColor="@color/secondblack"
+            android:layout_weight="3"
+            android:focusable="true"
+            android:textColorHint="@color/fourblack"
+            android:focusableInTouchMode="true"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/whitebag_layout"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_height="wrap_content">
+        <com.rey.material.widget.Button
+            android:id="@+id/register_btn"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext"
+            android:text="确认"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

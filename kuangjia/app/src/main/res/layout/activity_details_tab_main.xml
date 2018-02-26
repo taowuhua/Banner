@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/GridBG">
+    <include layout="@layout/quickpaytitle"></include>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        >
+        <android.support.design.widget.TabLayout
+            android:id="@+id/commonTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:tabSelectedTextColor="@color/color_383838"
+            app:tabTextColor="@color/threeblack"
+
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            >
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易明细"
+                android:onClick="unPayAction"
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资金动态"
+                android:onClick="payAction"
+                />
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+        <FrameLayout
+            android:id="@+id/tabfragemetcomtent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

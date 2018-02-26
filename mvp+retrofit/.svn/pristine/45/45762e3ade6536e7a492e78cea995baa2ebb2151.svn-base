@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3385ff</color>
+    <color name="colorPrimaryDark">#3385ff</color>
+    <color name="colorAccent">#3385ff</color>
+    <color name="color_338cff">#338cff</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <!-- ======================================== 瑞银信28原则规范图标颜色值=======================================  -->
+    <color name="blue_main">#1db7f0</color> <!--主色，用于特别强调突出的文字，按钮，icon以及背景色-->
+    <color name="blue_complementary_icon">#1db7f0</color> <!--辅色，仅用于icon-->
+
+    <!--按钮颜色值-->
+    <color name="blue_btn_click">#1db7f0</color> <!-- 按钮点击圆角12px,长度1000*132px -->
+    <color name="blue_btn_cannot_click">#A3E7FF</color> <!--不可点击圆角12px,1000*132px-->
+
+    <color name="warning_icon_ff8500">#ff8500</color> <!--辅色，仅用于icon-->
+    <color name="warning_icon_ffab2e">#ffab2e</color> <!--辅色，仅用于icon-->
+    <color name="warning_icon_ff7a6b">#ff7a6b</color> <!--辅色，用于icon,错误提示，金额数字-->
+    <color name="warning_icon_9bd119">#1db7f0</color> <!--辅色，仅用于icon-->
+
+    <color name="background_f0f3f5">#f0f3f5</color> <!--背景底色-->
+    <color name="background_ed">#ededed</color> <!--背景底色-->
+    <color name="background_white">#fff</color> <!--背景底色-->
+
+    <color name="black">#000000</color> <!--文字标题，需重点突出内容-->
+    <color name="secondblack">#666666</color>   <!--文字正文，需较长时间阅读，适用长篇文字-->
+    <color name="threeblack">#999999</color> <!--文字提示，不需要突出内容，不可消失-->
+    <color name="fourblack">#cccccc</color><!-- 文字提示，常用于输入框，点击消失-->
+    <color name="img_e5edff" >#e5edff</color>
+    <color name="img_e5f8ff" >#e5f8ff</color>
+    <color name="img_fff5e5" >#fff5e5</color>
+    <color name="GridBG">#eef1f3</color><!--灰色背景 -->
+    <color name="bg_f5f5f5">#f5f5f5</color>
+    <color name="grey_bg">#eef1f3</color>
+    <color name="grey_bg_grid">#f4f6f7</color>
+    <color name="white">#ffffff</color>
+    <color name="color_ffdaa3">#ffdaa3</color>
+    <color name="login_wjmm">#e0c098</color>
+    <color name="login_edt_getfocus">#1db7f0</color>
+    <color name="login_edt_lostfocus">#d7d7d7</color>
+    <color name="color_efeff4">#efeff4</color>
+</resources>

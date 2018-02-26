@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">替你还</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="input_psw">请输入密码</string>
+    <string name="agree">阅读并同意</string>
+    <string name="authorize_contract">《授权信息使用协议》</string>
+    <string name="repay_plan_tip">充值金额500元起，不得低于还款总金额10%</string>
+    <string name="repay_plan_contract">同意《还款协议》</string>
+</resources>

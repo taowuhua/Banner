@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ryxhttp-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ryxhttp-release.aar/553268973b0e581f55866903185504e2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ryxhttp-release.aar/553268973b0e581f55866903185504e2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

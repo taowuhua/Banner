@@ -1,0 +1,17 @@
+<com.zhy.autolayout.AutoFrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/GridBG"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lv_detaile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000" >
+        </ListView>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

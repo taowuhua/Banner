@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30px"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/BLACK"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="45px"
+        android:textSize="@dimen/bodytextsize" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_money"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="45px"
+        android:layout_marginBottom="50px"
+        android:textColor="@color/threeblack"
+        android:textSize="@dimen/bodytextsize" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_money"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:layout_toLeftOf="@+id/img_right"
+        android:textColor="@color/light_brown"
+        android:textSize="@dimen/bodytextsize" />
+
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="25px"
+        android:layout_height="48px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="45px"
+        android:background="@drawable/icon_user_jiantou" />
+</com.zhy.autolayout.AutoRelativeLayout>

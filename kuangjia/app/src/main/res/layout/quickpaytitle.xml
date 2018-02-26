@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="56dp"
+	android:background="@color/colorPrimary"
+	android:fitsSystemWindows="true"
+	android:layout_alignParentTop="true">
+<com.zhy.autolayout.AutoRelativeLayout
+	android:id="@+id/quickpaytitlelyout"
+	android:layout_width="match_parent"
+	android:layout_height="56dp"
+	android:gravity="center_vertical">
+	<ImageView
+		android:id="@+id/tileleftImg"
+		android:layout_width="110px"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_gravity="center_vertical"
+		android:focusable="false"
+		android:src="@drawable/quickpaytitlebackbg"
+		android:visibility="invisible"
+	/>
+
+	<TextView
+		android:id="@+id/tv_title"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:text="@string/app_name"
+		android:textColor="#fff"
+		android:maxLength="12"
+		android:textSize="@dimen/maxtextsize"/>
+	<ImageView
+		android:id="@+id/tilerightImg"
+		android:layout_width="106px"
+		android:layout_height="106px"
+		android:layout_marginRight="30px"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:focusable="false"
+		android:src="@drawable/quickpaytitlehelp"
+		android:visibility="invisible"
+	/>
+	<TextView
+		android:id="@+id/tilerighttext"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_marginRight="30px"
+		android:text="退出"
+		android:gravity="center"
+		android:visibility="gone"
+		android:textColor="@color/white"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"/>
+</com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

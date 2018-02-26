@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical">
+
+    <include layout="@layout/quickpaytitle" />
+
+    <ImageView
+        android:id="@+id/nodatalayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/no_internet"
+        android:visibility="gone" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/headimg_iv"
+            android:layout_width="225px"
+            android:layout_height="225px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:src="@drawable/myinfo_header" />
+
+        <TextView
+            android:id="@+id/info_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30px"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/bodytextsize" />
+
+        <TextView
+            android:id="@+id/phonenumber_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="55px"
+            android:layout_marginTop="20px"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/bodytextsize" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="30px"
+        android:paddingTop="30px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70px"
+                android:gravity="center"
+                android:text="当日已收款"
+                android:textColor="@color/secondblack"
+                android:textSize="@dimen/bodytextsize" />
+
+            <TextView
+                android:id="@+id/rvamount_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="45px"
+                android:layout_marginTop="30px"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_22" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/backg" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/lay_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70px"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_fee_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前费率"
+                    android:textColor="@color/secondblack"
+                    android:textSize="@dimen/bodytextsize" />
+
+                <ImageView
+                    android:id="@+id/iv_understandmore"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/tv_fee_text"
+                    android:src="@drawable/img_ask" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_currentreerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_text"
+                android:layout_marginBottom="45px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_22"
+                android:visibility="gone" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/backg"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/tobandcard_layou"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/jsk_prompting_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="35px"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="35px"
+            android:gravity="center"
+            android:text="结算卡"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <ImageView
+            android:id="@+id/jsk_bankimg_iv"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:layout_toLeftOf="@id/cardnumber_tv"
+            android:src="@drawable/bank_default" />
+
+        <TextView
+            android:id="@+id/cardnumber_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:layout_toLeftOf="@+id/iv_jiantou"
+            android:gravity="center"
+            android:text="暂无结算卡"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <ImageView
+            android:id="@+id/iv_jiantou"
+            android:layout_width="20px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:src="@drawable/icon_user_jiantou" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/backg"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/toupdatepaswd_layou"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginBottom="20px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/updatepaswd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="35px"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="35px"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:src="@drawable/icon_user_jiantou" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

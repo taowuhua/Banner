@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backg">
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/main_quickpaytitle"/>
+<com.zhy.autolayout.AutoLinearLayout
+    android:id="@+id/bannerlayout"
+    android:layout_width="match_parent"
+    android:layout_below="@id/appbar"
+    android:layout_height="600px">
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner_guide_content"
+        style="@style/MatchMatch"
+        app:banner_pageChangeDuration="1000"
+        app:banner_pointAutoPlayAble="true"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+        app:banner_pointTopBottomMargin="5dp"
+        app:banner_transitionEffect="cube" />
+</com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/recyclerviewlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bannerlayout"
+        android:layout_marginTop="20px"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="50px"
+    android:layout_alignParentBottom="true">
+    <TextView
+        android:id="@+id/version_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/secondblack"/>
+</com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

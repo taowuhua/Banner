@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="quickAdapter-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/quickAdapter-release.aar/53d9d841d24a288bc5ccccc9d609ce68/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/quickAdapter-release.aar/53d9d841d24a288bc5ccccc9d609ce68/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

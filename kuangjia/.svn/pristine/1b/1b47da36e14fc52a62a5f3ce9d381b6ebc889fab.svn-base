@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menulayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/contenttv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px"
+            android:layout_marginTop="80px"
+            android:layout_marginBottom="50px"
+            android:text=""
+            android:layout_gravity="center"
+            android:textColor="#4d4d4d"
+            android:textSize="@dimen/bodytextsize" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onepx"
+            android:background="#e0e0e0"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/cancelokall"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <com.rey.material.widget.Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="取消"
+                android:textSize="@dimen/bodylittletextsize"
+                android:textColor="@color/secondblack"
+                android:background="@android:color/transparent"
+                style="@style/LightFlatColorButtonRippleStyle"/>
+            <View
+                android:layout_width="@dimen/onepx"
+                android:layout_height="match_parent"
+                android:background="#d7d7d7"/>
+            <com.rey.material.widget.Button
+                android:id="@+id/ok_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="确认"
+                android:background="@null"
+                android:textSize="@dimen/bodylittletextsize"
+                android:textColor="@color/color_383838"
+                style="@style/LightFlatColorButtonRippleStyle"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/onlyok_all"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/onlyok_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="确认"
+                android:background="@null"
+                android:textSize="@dimen/bodylittletextsize"
+                android:textColor="@color/color_383838"
+                style="@style/LightFlatColorButtonRippleStyle"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

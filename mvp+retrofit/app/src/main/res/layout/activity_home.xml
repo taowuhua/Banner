@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f5f5f5"
+    android:orientation="vertical">
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="600px"
+    android:orientation="vertical"
+    android:background="@drawable/home_title_bg"
+    >
+<com.zhy.autolayout.AutoRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="90px"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33px"
+        android:src="@drawable/home_user"/>
+    <ImageView
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_marginRight="33px"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/home_msg"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30px"
+        android:weightSum="5"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:text="替你还账单"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30px"
+        android:weightSum="5"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext"
+            android:text="只需10%资金,顺利度过还款日"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20px"
+        android:weightSum="5"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_ffdaa3"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="@dimen/bodylittletextsize"
+            android:text="查看新手指南"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

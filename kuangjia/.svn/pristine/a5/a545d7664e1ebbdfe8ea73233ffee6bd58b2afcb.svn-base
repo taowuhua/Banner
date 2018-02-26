@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical">
+
+    <include layout="@layout/quickpaytitle" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/white_bakg_roundshape"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_old_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_oldpsw"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="请输入原密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:padding="5dp"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_oldpsw"
+                android:layout_marginLeft="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="原密码"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/iv_show_old_pwd_status"
+                android:layout_width="70px"
+                android:layout_height="35px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_user_eye_close" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_old_pwd_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/light_brown"
+            android:orientation="horizontal" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_newpsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="新密码"
+                android:layout_marginLeft="30px"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_newpsw"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:hint="请重新设置密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:padding="5dp"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_show_new_pwd_status"
+                android:layout_width="70px"
+                android:layout_height="35px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_user_eye_close" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_new_pwd_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/light_brown"
+            android:orientation="horizontal" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px">
+
+            <EditText
+                android:id="@+id/et_mac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="5dp"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_again_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20px"
+                android:layout_centerVertical="true"
+                android:text="获取验证码"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_mac_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="150px"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_save_pwd"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/btn_save_pwd"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/contenttitletext" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

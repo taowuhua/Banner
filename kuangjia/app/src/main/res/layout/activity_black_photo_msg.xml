@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GridBG"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/quickpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易卡卡主手持交易卡照片"
+            android:textColor="@color/secondblack"
+            android:textSize="@dimen/bodytextsize" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="140px"
+        android:layout_marginLeft="145px"
+        android:layout_marginRight="145px"
+        android:layout_marginTop="60px"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/iv_touxiang"
+            android:layout_width="0dp"
+            android:layout_height="448px"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/hand_holdcard" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="448px"
+            android:layout_marginLeft="175px"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/handhodcard" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/tohandsignll"
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="30px"
+            android:text="本人签名"
+            android:textColor="@color/fourblack"
+            android:textSize="@dimen/bodytextsize" />
+
+        <ImageView
+            android:id="@+id/iv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_marginTop="80px">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/bt_next"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="提交"
+            android:textSize="@dimen/contenttitletext" />
+
+    </LinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay_contract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_id"
+        android:layout_marginLeft="70px">
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/agreeCb"
+            style="@style/LightCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="60px"
+            android:layout_toRightOf="@+id/agreeCb"
+            android:text="@string/readandagree" />
+
+        <TextView
+            android:id="@+id/agreement_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="@string/pay_contract"
+            android:textColor="@color/colorPrimary" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

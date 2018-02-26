@@ -1,0 +1,32 @@
+<resources>
+    <!-- 最大标题96px-->
+    <dimen name="maxtitletext">38sp</dimen>
+    <!-- 最大标题96px-->
+    <dimen name="common_textsize">12sp</dimen>
+    <!-- 标头字体-->
+    <dimen name="verysmallsize">11sp</dimen>
+    <!-- 标头字体-->
+    <dimen name="smallersize">10sp</dimen>
+    <!-- 横线1px-->
+    <dimen name="onepx">1px</dimen>
+    <!-- ============================================瑞银信28原则规范字体汇总===================================== -->
+    <!-- 标头字体top字体-->
+    <dimen name="maxtextsize">16sp</dimen> <!--48px/16sp顶部导航标题用字,页面内特大标题用字-->
+    <!-- 正文字体-->
+    <dimen name="bodytextsize">14sp</dimen> <!--42px/14sp页面内普通标题用字,大段文字的正文标题,需要突出-->
+    <!-- 正文小一号字体-->
+    <dimen name="bodylittletextsize">12sp</dimen> <!--36px/12sp页面内正文用字，不需要强调突出-->
+    <!-- 最小字体-->
+    <dimen name="leasttextsize">10sp</dimen> <!--页面内最小用字，不突出，适用于注释辅助等-->
+    <!--按钮字体单独大小-->
+    <dimen name="contenttitletext">14sp</dimen>
+    <!--按钮字体单独大小-->
+    <dimen name="home_textsize">45sp</dimen>
+    <dimen name="textsize_36">36sp</dimen>
+    <!--小标题字体-->
+    <dimen name="mediumtitletext">17sp</dimen>
+    <dimen name="commontextsize">14sp</dimen>
+    <dimen name="textsize_30">30sp</dimen>
+    <dimen name="textsize_42">42sp</dimen>
+    <dimen name="textsize_48">48sp</dimen>
+</resources>

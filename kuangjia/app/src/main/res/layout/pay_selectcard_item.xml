@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:layout_marginTop="30px"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/bankImg_iv"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="30px"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bank_default"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/bankname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="建设银行(尾号5878)"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25px"
+        android:layout_toRightOf="@+id/bankImg_iv"/>
+    <ImageView
+        android:id="@+id/selectedImg_iv"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="30px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/cardseleced"
+        android:layout_marginRight="42px"
+        android:scaleType="centerInside"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

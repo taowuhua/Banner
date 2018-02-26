@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:scrollbars="none"
+    >
+<com.zhy.autolayout.AutoLinearLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/quickpaytitle"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70px"
+            android:text="金额:"
+            android:textColor="@color/secondblack"
+            android:textSize="@dimen/bodytextsize"/>
+
+        <TextView
+            android:id="@+id/paymoney_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="220px"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/bodytextsize"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#ffffff"
+        android:layout_marginTop="1px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70px"
+            android:text="持卡人:"
+            android:textColor="@color/secondblack"
+            android:textSize="@dimen/bodytextsize"/>
+
+        <TextView
+            android:id="@+id/payusername_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="220px"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/bodytextsize"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay_id"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#ffffff"
+        android:layout_marginTop="1px"
+        >
+        <TextView
+            android:id="@+id/tv_debitcardno_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70px"
+            android:text="卡号:"
+            android:textColor="@color/secondblack"
+            android:textSize="@dimen/bodytextsize"/>
+        <EditText
+            android:id="@+id/cardno_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="220px"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:hint="请输入扣款卡号"
+            android:inputType="number"
+            android:maxLength="30"
+            android:textColor="@android:color/black"
+            android:textColorHint="#cccccc"
+            android:textSize="@dimen/bodytextsize"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+<com.zhy.autolayout.AutoLinearLayout
+    android:id="@+id/prompting_layout"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="70px"
+    android:layout_marginTop="60px"
+    android:layout_marginBottom="40px"
+    android:visibility="gone"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/threeblack"
+        android:text="以下是你常用卡列表,可以直接选择"/>
+</com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/recyclerviewlayout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/carlist_recy"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="70px"
+    android:layout_marginRight="70px">
+</android.support.v7.widget.RecyclerView>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_height="wrap_content">
+        <com.rey.material.widget.Button
+            android:id="@+id/pay_nextbtn"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext"
+            android:text="下一步"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>
+</android.support.v4.widget.NestedScrollView>

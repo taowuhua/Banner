@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical">
+    <include layout="@layout/quickpaytitle"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay_id"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#ffffff"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="450px"
+        >
+        <TextView
+            android:id="@+id/tv_debitcardno_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70px"
+            android:text="卡号:"
+            android:textColor="@color/secondblack"
+            android:textSize="@dimen/bodytextsize"/>
+        <EditText
+            android:id="@+id/cardno_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="220px"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:hint="请输入本人收款卡号"
+            android:inputType="number"
+            android:maxLength="30"
+            android:textColor="@android:color/black"
+            android:textColorHint="#cccccc"
+            android:textSize="@dimen/bodytextsize"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="150px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_height="wrap_content">
+        <com.rey.material.widget.Button
+            android:id="@+id/checkcardnumber_nextbtn"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext"
+            android:text="下一步"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

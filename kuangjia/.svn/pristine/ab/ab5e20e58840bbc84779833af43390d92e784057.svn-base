@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/lay_title"
+        layout="@layout/quickpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay_middle"
+        android:layout_below="@+id/lay_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:layout_marginTop="74px">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/bodylittletextsize"/>
+        <TextView
+            android:id="@+id/tv_msgtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_time"
+            android:textSize="@dimen/mediumtitletext"/>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/lay_middle"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:layout_marginTop="20px"
+        android:background="@color/light_brown" />
+    <WebView
+        android:id="@+id/wv_msg"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:layout_marginTop="20px"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        android:singleLine="false"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/graytime"
+        android:textSize="16sp"/>
+</com.zhy.autolayout.AutoRelativeLayout>

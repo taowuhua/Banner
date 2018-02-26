@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+   <ImageView
+       android:id="@+id/splash_logo_iv"
+       android:layout_width="398px"
+       android:layout_height="444px"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="420px"
+       android:src="@drawable/app_splash_logo"/>
+    <ImageView
+        android:id="@+id/splash_Bottom_iv"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_city_img"
+        android:layout_alignParentBottom="true"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

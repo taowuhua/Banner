@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- StateListDrawable资源 
+	根据状态选择用哪个drawable对象
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:drawable="@drawable/point_normal" android:state_enabled="false"/>
+	<item android:drawable="@drawable/point_focused_guide" android:state_enabled="true"/>
+
+</selector>

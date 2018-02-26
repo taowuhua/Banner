@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TranslucentTheme" parent="AppTheme">
+        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+    <!--add by laomao for material desginer sytle-->
+    <style name="LightFlatWaveColorButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@null</item>
+        <item name="rd_rippleColor">#33000000</item>
+        <item name="rd_cornerRadius">4dp</item>
+        <item name="rd_delayClick">afterRelease</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+    <style name="LightRaiseColorButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+        <item name="android:background">@drawable/titlebakg</item>
+        <item name="rd_rippleColor">#33000000</item>
+        <item name="rd_leftPadding">1dp</item>
+        <item name="rd_topPadding">1dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="rd_rightPadding">1dp</item>
+        <item name="rd_bottomPadding">2dp</item>
+        <item name="rd_delayClick">afterRelease</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/abc_primary_text_material_dark</item>
+        <item name="android:layout_height">130px</item>
+    </style>
+    <style name="LightCheckBox" parent="Material.Drawable.CheckBox">
+        <item name="cbd_width">19dp</item>
+        <item name="cbd_height">19dp</item>
+        <item name="cbd_boxSize">17dp</item>
+        <item name="cbd_cornerRadius">0dp</item>
+        <item name="cbd_strokeSize">1dp</item>
+        <item name="cbd_animDuration">@android:integer/config_mediumAnimTime</item>
+    </style>
+</resources>

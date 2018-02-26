@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical">
+
+    <include layout="@layout/quickpaytitle" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40px"
+            android:layout_marginTop="57px"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47px"
+                android:text="收款金额"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bodytextsize" />
+
+            <TextView
+                android:id="@+id/tv_freerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20px"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bodytextsize" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="47px"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="¥"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+            <EditText
+                android:id="@+id/impay_paymoney"
+                android:layout_width="0px"
+                android:layout_height="200px"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                android:background="@null"
+                android:digits="0123456789."
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:maxLength="9"
+                android:textColor="@color/secondblack"
+                android:textColorHint="@color/fourblack"
+                android:textSize="24sp" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="40px">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/collection_nextbtn"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="下一步"
+            android:textSize="@dimen/contenttitletext" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

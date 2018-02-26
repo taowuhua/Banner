@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/backg"
+    android:orientation="vertical">
+    <include layout="@layout/quickpaytitle"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:orientation="vertical"
+        android:background="@drawable/white_bakg_roundshape">
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:id="@+id/username_layout"
+           android:layout_height="150px">
+           <TextView
+               android:id="@+id/tv_disname"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:textColor="@color/black"
+               android:layout_marginLeft="30px"
+               android:textSize="@dimen/bodytextsize"
+               android:text="姓    名"/>
+           <EditText
+               android:id="@+id/edt_username"
+               android:layout_toRightOf="@id/tv_disname"
+               android:layout_width="match_parent"
+               android:layout_height="70px"
+               android:layout_marginLeft="50px"
+               android:layout_centerVertical="true"
+               android:background="@null"
+               android:cursorVisible="true"
+               android:ems="11"
+               android:hint="请输入姓名"
+               android:inputType="text"
+               android:maxLength="10"
+               android:textColorHint="#cccccc"
+               android:textCursorDrawable="@null"
+               android:textSize="@dimen/bodytextsize" />
+       </com.zhy.autolayout.AutoRelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/backg"></View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px">
+            <TextView
+                android:id="@+id/tv_idcard_display"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30px"
+                android:textSize="@dimen/bodytextsize"
+                android:text="身份证"/>
+            <EditText
+                android:id="@+id/edt_idcardnumber"
+                android:layout_toRightOf="@id/tv_idcard_display"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_marginLeft="50px"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:maxLength="18"
+                android:digits="0123456789x"
+                android:inputType="textVisiblePassword"
+                android:cursorVisible="true"
+                android:hint="请输入身份证号"
+                android:textColorHint="#cccccc"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/bodytextsize" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="120px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_height="wrap_content">
+        <com.rey.material.widget.Button
+            android:id="@+id/auth_nextbtn"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext"
+            android:text="确定"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

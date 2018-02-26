@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#eef1f3"
+    android:orientation="vertical">
+    <include layout="@layout/quickpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="150px"
+            android:layout_marginLeft="70px"
+
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/secondblack"
+                android:text="交易卡号:" />
+            <TextView
+                android:id="@+id/tv_idcardid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="300px"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/secondblack"
+                android:layout_marginRight="47px"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/onepx"
+            android:background="@color/payhorizontalline" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="150px"
+            android:layout_marginLeft="70px"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/secondblack"
+                android:text="姓名:" />
+            <EditText
+                android:id="@+id/et_pname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/contenttitletext"
+                android:hint="请输入交易卡卡主姓名"
+                android:background="@null"
+                android:maxLength="9"
+                android:textColor="@color/secondblack"
+                android:layout_marginLeft="300px"
+                android:layout_weight="4"
+                android:focusable="true"
+                android:textColorHint="@color/fourblack"
+                android:focusableInTouchMode="true"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/onepx"
+            android:background="@color/payhorizontalline" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="150px"
+            android:layout_marginLeft="70px"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/secondblack"
+                android:text="身份证号:" />
+            <EditText
+                android:id="@+id/et_pid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/contenttitletext"
+                android:hint="请输入交易卡卡主身份证号"
+                android:background="@null"
+                android:maxLength="18"
+                android:textColor="@color/secondblack"
+                android:layout_marginLeft="300px"
+                android:layout_weight="4"
+                android:focusable="true"
+                android:textColorHint="@color/fourblack"
+                android:digits = "0123456789x"
+                android:inputType="textVisiblePassword"
+                android:focusableInTouchMode="true"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/onepx"
+            android:background="@color/payhorizontalline" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="150px"
+            android:layout_marginLeft="70px"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/secondblack"
+                android:text="预留手机号:" />
+            <EditText
+                android:id="@+id/et_phoneno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/contenttitletext"
+                android:hint="请输入交易卡银行预留手机号"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/secondblack"
+                android:layout_marginLeft="300px"
+                android:layout_weight="4"
+                android:focusable="true"
+                android:textColorHint="@color/fourblack"
+                android:focusableInTouchMode="true"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/onepx"
+            android:background="@color/payhorizontalline" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="150px"
+            android:layout_marginLeft="70px"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/secondblack"
+                android:text="验证码:" />
+            <EditText
+                android:id="@+id/et_smscode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/contenttitletext"
+                android:hint="请填写验证码"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/secondblack"
+                android:layout_marginLeft="300px"
+                android:layout_weight="4"
+                android:focusable="true"
+                android:textColorHint="@color/fourblack"
+                android:focusableInTouchMode="true"
+                />
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/contenttitletext"
+                android:text="获取验证码"
+                android:textColor="@color/secondblack"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginRight="50px"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/onepx"
+            android:background="@color/payhorizontalline" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="80px"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_height="wrap_content">
+        <com.rey.material.widget.Button
+            android:id="@+id/black_check_nextbtn"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext"
+            android:text="下一步"/>
+
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
